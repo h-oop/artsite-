@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>wheee</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  
+  <body>
+    <!-- HEADER -->
+	  <h1 class="header">
+      websit
+      <br>
+      <div class="title">
+        WEBSITE FOR ART        
+      </div>
+      
+    </h1>
+    <h2>Very cool art stuff</h2>
+    
+    <!-- Tabs -->
+    <div class="tabcol">
+		  <button class="tab" onclick="tabOneOpen()">Gallery</button>
+      <button class="tab" onclick="tabTwoOpen()">Shopping Cart</button>
+      <button class="tab" onclick="tabThreeOpen()">Login</button>
+       
+    </div>
+
+    <!-- internal tabs -->
+
+    <div class="bodbod">
+    <!--TAB ONE-->
+    <div id=tabone>
+      <h1 class="galleryc">Gallery</h1>
+      <span id="artSeen">
+
+        <p>
+            <select id="sortby">
+              <option value="all">All</option>
+              <option value="landscape">Landscape</option>
+              <option value="portrait">Portrait</option>
+              <option value="ross">Bob Ross</option>
+              <option value="magritte">René Magritte</option>
+            </select>
+          
+            <button id="sortbtn" onclick="selector()">Sort</button>
+          </p>
+        
+      </span>
+      
+    </div>
+    
+
+    <!--TAB TWO-->
+    <div id=tabtwo>
+      <h1>Shopping Cart</h1>
+
+      <!-- shopping list box -->
+      <div class="flexCont" id="shoppinglist">
+      </div>
+      
+      <button onclick="checkout()">Checkout</button>
+      
+    </div>
+    
+
+    <!--TAB THREE-->
+    <div id=tabthree>
+      <div id="loginNeeded">
+        <h1 class="loginc">Login</h1>
+        <p>E-mail: <input type="text" id="emailin"></p>
+        <p>Password: <input type="text" id="passwordin"></p>
+
+        <div id="login input"></div>
+
+        <p>
+        <button class="loginbtns" id="signup btn" onclick="signUp()">SIGN UP</button>
+        <button class="loginbtns" id="log btn" onclick="login()">LOGIN</button>
+        </p>
+        
+        <br>
+        <div id="outputLogin"></div>
+      </div>
+
+      <span id="returnLog"></span>
+      
+    </div>
+    
+    </div>
+
+    <button onclick="localStorage.clear()">CLEARR</button>
+
+
+    
+    <!-- FOOTER FOOTF -->
+    <footer>
+      <!--<div class="flexCont">-->
+      <p>foot foot footer feets fum fosoets</p>
+      
+      
+      <!--</div>-->
+    </footer>
+
+
+    
+    <script src="js/artclass.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tab one.js"></script>
+    <script src="js/tab two.js"></script>
+    <script src="js/tab three.js"></script>
+  </body>
+</html>
+
