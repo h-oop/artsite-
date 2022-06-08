@@ -16,3 +16,4 @@ function checkout() {
   console.log(shoppingCartArray);
 }
 
+//
