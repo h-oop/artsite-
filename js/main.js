@@ -12,7 +12,6 @@ let laDecalomanieEl = document.getElementById("laDecalomanieId");
 //prime page
 document.getElementById("tabtwo").style.display = "none";
 document.getElementById("tabthree").style.display = "none";
-myStorage = window.localStorage;
 
 
 
@@ -35,5 +34,6 @@ function tabThreeOpen() {
   document.getElementById("tabtwo").style.display = "none";
   document.getElementById("tabthree").style.display = "block";
 }
+
 
 

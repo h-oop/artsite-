@@ -1,7 +1,8 @@
 //
 
 //shopping cart array
-let shoppingCartArray = []
+let shoppingCartArray = [];
+
 
 class Art {
 
@@ -20,14 +21,17 @@ class Art {
     this.bought = true;
     console.log(`${this.title} added to cart`);
     shoppingCartArray.push(this.title);
+    localStorage.setItem(`shopsData${localStorage.length + 1}`, this.title);
+    
     for (let i = 0; i < finalArtArray.length; i++) {
       if (nameArray[i] == this.title) {
         //switch button function
         document.getElementById(`returnPiece${i}`).disabled = false;
         document.getElementById(`buyPiece${i}`).disabled = true;
+        
+        
       }
     }
-    localStorage.setItem("shopsData", finalArtArray);
     
     console.log(shoppingCartArray);
   }
@@ -44,7 +48,11 @@ class Art {
         shoppingCartArray.pop(i);
       }
     }
-    localStorage.setItem("shopsData", finalArtArray);
+    for (let i = 0; i < finalArtArray.length; i++) {
+      if (nameArray[i] == this.title) {
+        
+      }
+    }
     
     console.log(shoppingCartArray);
   }
@@ -52,4 +60,3 @@ class Art {
 }
 
 
-//make it so that this.bought = true =added to shopping cart and removed when false

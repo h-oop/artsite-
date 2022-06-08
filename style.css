@@ -1,147 +1,147 @@
 /* body */
 
 html {
-background: white;
-}
-
-body { 
-display:flex; 
-flex-direction: column; 
-margin: auto;
-font-size: 20px;
-}
-
-
-/* tabs */
-
-.bodbod {
-background: white;
-margin: auto;
-padding: 60px;
-}
-
-
-.bodbod > div{
-display: inline;
-}
-
-.tabcol {
-position: sticky;
-display: flex;
-text-align: right;
-justify-content: space-between;
-}
-
-.tab {
-flex: 1;
-background: white;
-border: 1px solid grey;
-padding: 5px;
-font-family: "Times New Roman", Times, serif;
-font-size: 20px;
-}
-
-.tab:hover {
-cursor: pointer;
-background: #c4c4c4;
-color: white;
-}
-
-footer {
-position: relative;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: rgb(48, 51, 56);
-color: white;
-text-align: center;
-}
-
-h1.header, div.tabcol, h2 {
-top: 0;
-padding: 20px;
-left: 20px;
-width: 96.8%;
-margin: 0 auto;
-background-color: #bdc1c7;
-
-}
-
-h1.galleryc {
-font-size: 46px;
-}
-
-.title {
-font-size: 50px
-}
-
-div.artbox {
-padding: 10px;
-}
-
-button {
-padding: 5px 15px;
-cursor: pointer;
-font-family: "Times New Roman", Times, serif;
-}
-
-.buy {
-background-color: #34a834;
-}
-
-.sell {
-background-color: #5c5cd6;
-}
-
-#log-btn {
-background: green;
-color: white;
-padding: 5px 17px;
-font-size: 17px;
-}
-
-#outputLogin {
-text-align: center;
-font-family: georgia, serif;
-font-weight: bold;
-font-size: 115%;
-}
-
-#loginNeeded {
-display: flex;
-text-align: left;
-flex-direction: column;
-}
-
-.flexCont {
-flex-direction: column;
-display: flex;
-background-color: #e1e1e1;
-margin: 10px;
-padding: 7px 15px;
-font-size: 24px;
-}
-
-.flexCont > li, .flexCont > div {
-padding: 10px;
-background-color: rgba(111,41,97,.3);
-border: 2px solid rgba(111,41,97,.5);
-}
-
-#tabtwo {
-display: flex;
-flex-direction: column;
-text-align: center;
-margin: 8px;
-padding: 18px;
-font-size: 30px;
-width: 100%;
-flex-wrap: wrap;
-}
-
-.loginBtns {
-padding: 5px 15px;
-cursor: pointer;
-font-family: "Times New Roman", Times, serif;
-width: 30px;
-}
+    background: white;
+  }
+  
+  body { 
+    display:flex; 
+    flex-direction: column; 
+    margin: auto;
+    font-size: 20px;
+  }
+  
+  
+  /* tabs */
+  
+  .bodbod {
+    background: white;
+    margin: auto;
+    padding: 60px;
+  }
+  
+  
+  .bodbod > div{
+    display: inline;
+  }
+  
+  .tabcol {
+    position: sticky;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    flex: 1;
+    background: white;
+    border: 1px solid grey;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  
+  .tab:hover {
+    cursor: pointer;
+    background: #c4c4c4;
+    color: white;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(48, 51, 56);
+    color: white;
+    text-align: center;
+  }
+  
+  h1.header, div.tabcol, h2 {
+    top: 0;
+    padding: 20px;
+    left: 20px;
+    width: 96.8%;
+    margin: 0 auto;
+    background-color: #bdc1c7;
+  
+  }
+  
+  h1.galleryc {
+    font-size: 46px;
+  }
+  
+  .title {
+    font-size: 50px
+  }
+  
+  div.artbox {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .buy {
+    background-color: #34a834;
+  }
+  
+  .sell {
+    background-color: #5c5cd6;
+  }
+  
+  #log-btn {
+    background: green;
+    color: white;
+    padding: 5px 17px;
+    font-size: 17px;
+  }
+  
+  #outputLogin {
+    text-align: center;
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size: 115%;
+  }
+  
+  #loginNeeded {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  
+  .flexCont {
+    flex-direction: column;
+    display: flex;
+    background-color: #e1e1e1;
+    margin: 10px;
+    padding: 7px 15px;
+    font-size: 24px;
+  }
+  
+  .flexCont > li, .flexCont > div {
+    padding: 10px;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
+  }
+  
+  #tabtwo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 8px;
+    padding: 18px;
+    font-size: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .loginBtns {
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    width: 30px;
+  }

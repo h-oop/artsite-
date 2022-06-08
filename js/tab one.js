@@ -10,49 +10,8 @@ let priceArray = ["$3", "$10", "$4", "$2"]
 //collection of all the array information ^
 let finalArtArray = []
 
-//button please work
+//button to initiate search based upon selected select option
 let sortBtnEl = document.getElementById("sortbtn");
-
-
-/////////////////////////////////////////////////////////////////////////////
-let arts = initArts();
-
-function initArts() {
-  let finalArtStr = localStorage.getItem("artsData");
-  if (!finalArtStr) {
-    return []
-  } else {
-    let arts = JSON.parse(finalArtStr);
-    for (let i = 0; i < arts.length; i++) {
-      arts[i] = new Art(artArray[i], nameArray[i], artistArray[i],
-                orientationArray[i], sizeArray[i], priceArray[i])
-    }
-    return arts;
-  }
-}
-
-/////////////////////////////// THIS IS THE PROBLEM. CLEARS FINAL ART ARRAY FOR SOME REASON???
-// let shops = initShops();
-
-// function initShops() {
-//   let finalShopStr = localStorage.getItem("shopsData");
-  
-//   if (!finalShopStr) {
-//     return []
-//   } else {
-//     ///maybe differ let shops here and let shops above
-//     let shops = JSON.parse(finalShopStr);
-//     for (let i = 0; i < shops.length; i++) {
-//       shoppingCartArray[i] = shops[i];
-//       ////////////////////////^^^^^put something in here?????? run thru,. like 
-//       ////////////////////. it needs to go thru an array. maybe string/parse
-//     }
-//     return shops;
-//   }
-// }
-
-////////////////////////////////////////////////////////////////////////////
-
 
 
 //set up default page
@@ -65,6 +24,35 @@ function objectAllArt() {
 
 objectAllArt();
 console.log(finalArtArray);
+
+
+/////////////////////////////// weee localstoragejunk
+
+
+let shops = initShops();
+
+function initShops() {
+  for (var i = 1; i < localStorage.length; i++){
+    let finalShopString = localStorage.getItem(`shopsData${1}`)
+
+  if (!finalShopString) {
+    console.log("nothing in storage to load");
+    return [];
+    loadList();
+  } else {
+    
+    console.log("THIS MEANS THAT THE SHOPPING ARRAY HAS SOMETHING IN IT")
+    let shops = JSON.parse(finalShopString);
+    return shops;
+    loadList();
+  }
+  }
+  
+}
+
+
+////////////////////////////////////////////////////////////////////////////
+
 
 
 //generates from class each piece of art for display
@@ -87,14 +75,13 @@ makeTheArt();
 
 
 ////////////////////////////////////////////////////////////////////
-//sorting stuff
+//sorting art by certain values
 
 
 
 function selector() {
   //get "value" from html selector
   let selection = document.getElementById(`sortby`).value;
-  console.log("pleasework");
   
   //action based on selected
   if (selection === "all") {
@@ -118,7 +105,6 @@ function allSort() {
 }
 
 function landscapeSort() {
- ////////// artSeen.innerHTML == ``;
   for (let i = 0; i < finalArtArray.length; i++) {
     if (orientationArray[i] == "Landscape") {
       document.getElementById(`displayPiece${i}`).style.display = "block";
@@ -129,7 +115,6 @@ function landscapeSort() {
 }
 
 function portraitSort() {
- //////// artSeen.innerHTML == ``;
   for (let i = 0; i < finalArtArray.length; i++) {
     if (orientationArray[i] == "Portrait") {
       document.getElementById(`displayPiece${i}`).style.display = "block";
@@ -140,7 +125,6 @@ function portraitSort() {
 }
 
 function rossSort() {
- ///////// artSeen.innerHTML == ``;
   for (let i = 0; i < finalArtArray.length; i++) {
     if (artistArray[i] == "Bob Ross") {
       document.getElementById(`displayPiece${i}`).style.display = "block";
@@ -151,7 +135,6 @@ function rossSort() {
 }
 
 function magritteSort() {
-///////  artSeen.innerHTML == ``;
   for (let i = 0; i < finalArtArray.length; i++) {
     if (artistArray[i] == "René Magritte") {
       document.getElementById(`displayPiece${i}`).style.display = "block";
@@ -160,11 +143,3 @@ function magritteSort() {
     }
   }
 }
-
-
-
-
-
-
-//get el by id style=display:block
-
