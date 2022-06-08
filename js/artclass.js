@@ -1,3 +1,4 @@
+
 //
 
 //shopping cart array
@@ -5,7 +6,6 @@ let shoppingCartArray = [];
 
 
 class Art {
-
   constructor(art, title, artist, orientation, size, price) {
     this.art = art;
     this.title = title;

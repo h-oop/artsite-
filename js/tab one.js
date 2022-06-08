@@ -25,8 +25,7 @@ function objectAllArt() {
 objectAllArt();
 console.log(finalArtArray);
 
-
-/////////////////////////////// weee localstoragejunk
+////////////////////////////////////////////////////local storage
 
 
 let shops = initShops();
