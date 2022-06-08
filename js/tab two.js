@@ -2,7 +2,7 @@
 //loads the shopping cart array every time the page is opened
 function loadlist() {
   shoppinglist.innerHTML = ``
-  for (let i=1; i < localStorage.length; i++) {
+  for (let i=0; i < localStorage.length; i++) {
     shoppinglist.innerHTML += `<div>1x ${shoppingCartArray[i]}<div>`;
   }
 }
